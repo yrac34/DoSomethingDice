@@ -44,24 +44,36 @@ struct MainView: View {
           HStack {
             
             Spacer()
-            
-            Image(activity[activityN[0]])
-              .resizable()
-              .aspectRatio(1, contentMode: .fit)
-              .background(Color.white.opacity(0.5))
-              .cornerRadius(20)
-            
-            Image(food[foodN[0]])
-              .resizable()
-              .aspectRatio(1, contentMode: .fit)
-              .background(Color.white.opacity(0.5))
-              .cornerRadius(20)
-
-            Image(dessert[dessertN[0]])
-              .resizable()
-              .aspectRatio(1, contentMode: .fit)
-              .background(Color.white.opacity(0.5))
-              .cornerRadius(20)
+            VStack {
+              
+              Text("Activity")
+              
+              Image(activity[activityN[0]])
+                .resizable()
+                .aspectRatio(1, contentMode: .fit)
+                .background(Color.white.opacity(0.5))
+                .cornerRadius(20)
+            }
+   
+            VStack {
+              
+              Text("Food")
+              Image(food[foodN[0]])
+                .resizable()
+                .aspectRatio(1, contentMode: .fit)
+                .background(Color.white.opacity(0.5))
+                .cornerRadius(20)
+            }
+          
+            VStack {
+              
+              Text("Dessert")
+              Image(dessert[dessertN[0]])
+                .resizable()
+                .aspectRatio(1, contentMode: .fit)
+                .background(Color.white.opacity(0.5))
+                .cornerRadius(20)
+            }
             
             Spacer()
             
